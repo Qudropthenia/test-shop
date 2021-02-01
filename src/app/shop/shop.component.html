@@ -1,0 +1,9 @@
+<p-tabMenu [model]="items" [activeItem]="activeItem"></p-tabMenu>
+
+<div *ngIf="selectedItemMenu =='orders'; then ordersBlock else goodsBlock"></div>
+<ng-template #ordersBlock>
+    <span>orders</span>
+</ng-template>
+<ng-template #goodsBlock>
+    <span>goods</span>
+</ng-template>
